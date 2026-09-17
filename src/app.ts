@@ -20,6 +20,8 @@ app.get("/", (_req, res) => {
   });
 });
 
+//Post user
+
 app.post("/user", (req, res) => {
   const { name, email } = req.body;
   if (typeof name !== "string" || typeof email !== "string" || !name.trim() || !email.trim()) {
